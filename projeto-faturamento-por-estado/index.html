@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faturamento Mensal por Estado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Faturamento Mensal por Estado</h1>
+        <button onclick="calcularPercentuais()">Calcular Percentuais</button>
+        <table id="tabelaResultados">
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>Faturamento (R$)</th>
+                    <th>Percentual (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SP</td>
+                    <td id="spFaturamento"></td>
+                    <td id="spPercentual"></td>
+                </tr>
+                <tr>
+                    <td>RJ</td>
+                    <td id="rjFaturamento"></td>
+                    <td id="rjPercentual"></td>
+                </tr>
+                <tr>
+                    <td>BH</td>
+                    <td id="bhFaturamento"></td>
+                    <td id="bhPercentual"></td>
+                </tr>
+                <tr>
+                    <td>RS</td>
+                    <td id="rsFaturamento"></td>
+                    <td id="rsPercentual"></td>
+                </tr>
+                <tr>
+                    <td>Outros</td>
+                    <td id="outrosFaturamento"></td>
+                    <td id="outrosPercentual"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
